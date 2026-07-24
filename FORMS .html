@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Student Registration Form</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    padding:40px;
+}
+
+.container{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+fieldset{
+    border:2px solid #2563eb;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+legend{
+    color:#2563eb;
+    font-weight:600;
+    padding:0 10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:500;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+input:focus,select:focus,textarea:focus{
+    border-color:#2563eb;
+    outline:none;
+}
+
+.radio-group input,
+.checkbox-group input{
+    width:auto;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-top:8px;
+}
+
+.terms{
+    height:120px;
+    overflow-y:auto;
+    border:1px solid #ccc;
+    padding:10px;
+    background:#f8fafc;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+button{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    background:#2563eb;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Registration Form</h1>
+
+<form>
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Register Number</label>
+<input type="text">
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Password</label>
+<input type="password">
+
+<label>Phone Number</label>
+<input type="tel">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+
+<div class="radio-group">
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+<input type="radio" name="g"> Other
+</div>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Academic Details</legend>
+
+<label>Department</label>
+
+<select>
+<option>EEE</option>
+<option>ECE</option>
+<option>CSE</option>
+<option>IT</option>
+<option>MECH</option>
+<option>CIVIL</option>
+</select>
+
+<label>Year</label>
+
+<select>
+<option>I Year</option>
+<option>II Year</option>
+<option>III Year</option>
+<option>IV Year</option>
+</select>
+
+<label>Semester</label>
+
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+</select>
+
+<label>CGPA</label>
+
+<input type="number" step="0.01">
+
+</fieldset>
+
+<fieldset>
+
+<legend>Skills & Documents</legend>
+
+<label>Skills</label>
+<input type="text" placeholder="HTML, CSS, Java, Python">
+
+<label>Hobbies</label>
+
+<div class="checkbox-group">
+<input type="checkbox"> Coding
+<input type="checkbox"> Reading
+<input type="checkbox"> Music
+<input type="checkbox"> Sports
+</div>
+
+<label>Upload Photo</label>
+<input type="file">
+
+<label>Upload Resume</label>
+<input type="file">
+
+<label>GitHub Profile</label>
+<input type="url">
+
+<label>LinkedIn Profile</label>
+<input type="url">
+
+</fieldset>
+
+<fieldset>
+
+<legend>About Yourself</legend>
+
+<textarea rows="5" placeholder="Write about yourself..."></textarea>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Terms & Conditions</legend>
+
+<div class="terms">
+<p>
+1. All information provided must be accurate.<br><br>
+2. Uploaded documents must be genuine.<br><br>
+3. Personal data will be used only for academic purposes.<br><br>
+4. The institution reserves the right to verify submitted details.<br><br>
+5. False information may result in cancellation of registration.<br><br>
+6. By submitting this form, you agree to all the terms and conditions.
+</p>
+</div>
+
+<input type="checkbox" required> I agree to the Terms & Conditions.
+
+</fieldset>
+
+<div class="buttons">
+<button type="submit">Register</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
